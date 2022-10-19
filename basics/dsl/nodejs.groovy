@@ -1,6 +1,6 @@
 job('NodeJS example') {
     scm {
-        git('git://https://github.com/tehilla-cohen/docker-cicd.git') {  node -> // is hudson.plugins.git.GitSCM
+        git('https://github.com/tehilla-cohen/docker-cicd.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL yaniv')
             node / gitConfigEmail('jenkins-dsl@newtech.academy')
         }
@@ -18,7 +18,7 @@ job('NodeJS example') {
 }
 job('NodeJS example2') {
     scm {
-        git('git://https://github.com/tehilla-cohen/docker-cicd.git') {  node -> // is hudson.plugins.git.GitSCM
+        git('https://github.com/tehilla-cohen/docker-cicd.git') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL yaniv')
             node / gitConfigEmail('jenkins-dsl@newtech.academy')
         }
